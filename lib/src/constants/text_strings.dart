@@ -25,3 +25,7 @@ const String alreadyHaveAnAccount = "Already have an account?";
 const String dontHaveAnAccount = "Don't have an account?";
 const String forgetPassword = "Forget Password";
 const String signInWithGoogle = "Sign in with Google";
+
+const String signUpTitle = "Get On Board!";
+const String signUpSubtitle =
+    "Create your profile to start your Journey with us...";

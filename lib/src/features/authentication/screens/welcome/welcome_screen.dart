@@ -4,6 +4,7 @@ import 'package:arqontac_app/src/constants/image_strings.dart';
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
 import 'package:arqontac_app/src/features/authentication/screens/login/login_screen.dart';
+import 'package:arqontac_app/src/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -69,7 +70,13 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     Expanded(
                         child: ElevatedButton(
-                            onPressed: () {}, child: const Text("SIGNUP"))),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  CupertinoPageRoute(
+                                      builder: (_) => const SignUpScreen()));
+                            },
+                            child: const Text("SIGNUP"))),
                   ],
                 ),
               )

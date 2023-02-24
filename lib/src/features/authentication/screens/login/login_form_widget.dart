@@ -44,7 +44,8 @@ class LoginForm extends StatelessWidget {
             ),
             SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(onPressed: () {}, child: Text("LOGIN")))
+                child: ElevatedButton(
+                    onPressed: () {}, child: const Text("LOGIN")))
           ],
         ),
       ),

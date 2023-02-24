@@ -1,5 +1,6 @@
 import 'package:arqontac_app/src/utils/theme/widget_themes/app_elevated_button_theme.dart';
 import 'package:arqontac_app/src/utils/theme/widget_themes/app_outlined_button_theme.dart';
+import 'package:arqontac_app/src/utils/theme/widget_themes/app_text_field_theme.dart';
 import 'package:arqontac_app/src/utils/theme/widget_themes/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ class AppTheme {
     floatingActionButtonTheme: const FloatingActionButtonThemeData(),
     elevatedButtonTheme: AppElevatedButtonTheme.light,
     outlinedButtonTheme: AppOutlinedButtonTheme.light,
+    inputDecorationTheme: AppTextFieldTheme.light,
   );
   static ThemeData dark = ThemeData(
     useMaterial3: true,
@@ -25,5 +27,6 @@ class AppTheme {
     floatingActionButtonTheme: const FloatingActionButtonThemeData(),
     elevatedButtonTheme: AppElevatedButtonTheme.dark,
     outlinedButtonTheme: AppOutlinedButtonTheme.dark,
+    inputDecorationTheme: AppTextFieldTheme.dark,
   );
 }

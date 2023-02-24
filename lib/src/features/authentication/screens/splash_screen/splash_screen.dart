@@ -3,7 +3,6 @@ import 'package:arqontac_app/src/constants/colors.dart';
 import 'package:arqontac_app/src/constants/image_strings.dart';
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
-import 'package:arqontac_app/src/features/authentication/screens/on_boarding/on_boarding_screen.dart';
 import 'package:arqontac_app/src/features/authentication/screens/welcome/welcome_screen.dart';
 import 'package:arqontac_app/src/widgets/decorations/rounded_shape.dart';
 import 'package:flutter/cupertino.dart';
