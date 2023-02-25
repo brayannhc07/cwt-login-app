@@ -7,22 +7,39 @@ class FormHeaderWidget extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subtitle,
+    this.imageColor,
+    this.heightBetween,
+    this.imageHeight = 0.2,
+    this.textAlign,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
   });
 
+  final Color? imageColor;
+  final double imageHeight;
+  final double? heightBetween;
   final String image, title, subtitle;
+  final CrossAxisAlignment crossAxisAlignment;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
         SvgPicture.asset(
           image,
-          height: size.height * 0.2,
+          height: size.height * imageHeight,
+        ),
+        SizedBox(
+          height: heightBetween,
         ),
         Text(title, style: Theme.of(context).textTheme.displayLarge),
-        Text(subtitle, style: Theme.of(context).textTheme.bodyLarge),
+        Text(
+          subtitle,
+          style: Theme.of(context).textTheme.bodyLarge,
+          textAlign: textAlign,
+        ),
       ],
     );
   }

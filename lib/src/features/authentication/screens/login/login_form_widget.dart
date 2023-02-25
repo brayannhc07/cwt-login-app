@@ -1,9 +1,10 @@
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
+import 'package:arqontac_app/src/features/authentication/screens/forget_password/forget_password_options/forget_password_modal_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({
+class LoginFormWidget extends StatelessWidget {
+  const LoginFormWidget({
     super.key,
   });
 
@@ -40,7 +41,10 @@ class LoginForm extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                  onPressed: () {}, child: const Text(forgetPassword)),
+                  onPressed: () {
+                    ForgetPasswordScreen.buildShowModalBottomSheet(context);
+                  },
+                  child: const Text(forgetPassword)),
             ),
             SizedBox(
                 width: double.infinity,
