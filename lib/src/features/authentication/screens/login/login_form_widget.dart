@@ -1,6 +1,8 @@
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
 import 'package:arqontac_app/src/features/authentication/screens/forget_password/forget_password_options/forget_password_modal_bottom_sheet.dart';
+import 'package:arqontac_app/src/features/core/screens/dashboard/dashboard_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginFormWidget extends StatelessWidget {
@@ -49,7 +51,13 @@ class LoginFormWidget extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text("LOGIN")))
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          CupertinoPageRoute(
+                              builder: (_) => const DashboardScreen()));
+                    },
+                    child: const Text("LOGIN")))
           ],
         ),
       ),

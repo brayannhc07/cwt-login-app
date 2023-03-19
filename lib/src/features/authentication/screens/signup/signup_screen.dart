@@ -1,8 +1,10 @@
 import 'package:arqontac_app/src/constants/image_strings.dart';
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
+import 'package:arqontac_app/src/features/authentication/screens/login/login_screen.dart';
 import 'package:arqontac_app/src/features/authentication/screens/signup/signup_form_widget.dart';
 import 'package:arqontac_app/src/widgets/form/form_header_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -40,12 +42,18 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          CupertinoPageRoute(
+                              builder: (_) => const LoginScreen()));
+                    },
                     child: Text.rich(TextSpan(children: [
                       TextSpan(
                           text: alreadyHaveAnAccount,
                           style: Theme.of(context).textTheme.bodyLarge),
-                      const TextSpan(text: "Login")
+                      const TextSpan(
+                          text: "Login", style: TextStyle(color: Colors.blue))
                     ])),
                   )
                 ],

@@ -1,6 +1,8 @@
 import 'package:arqontac_app/src/constants/image_strings.dart';
 import 'package:arqontac_app/src/constants/sizes.dart';
 import 'package:arqontac_app/src/constants/text_strings.dart';
+import 'package:arqontac_app/src/features/authentication/screens/signup/signup_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginFooterWidget extends StatelessWidget {
@@ -28,7 +30,10 @@ class LoginFooterWidget extends StatelessWidget {
               label: const Text(signInWithGoogle)),
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(context,
+                CupertinoPageRoute(builder: (_) => const SignUpScreen()));
+          },
           child: Text.rich(TextSpan(
               text: dontHaveAnAccount,
               style: Theme.of(context).textTheme.bodyLarge,
