@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212075994330",
+    "project_id": "flutter-login-app-a8b2d",
+    "storage_bucket": "flutter-login-app-a8b2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212075994330:android:89af64f472381581d6d9e3",
+        "android_client_info": {
+          "package_name": "com.example.arqontac_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212075994330-jurrr769otlv11s7ovgpc2gkvp3p39bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT6BdeLhltw_jevmnYJ9LVj22mFAH8fXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212075994330-jurrr769otlv11s7ovgpc2gkvp3p39bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
